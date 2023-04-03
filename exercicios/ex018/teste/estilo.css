@@ -1,0 +1,40 @@
+/* Define a cor de fundo da página */
+body {
+    background-color: #F5F5DC;
+}
+
+/* Centraliza a primeira linha de texto */
+h1 {
+    text-align: center;
+}
+
+/* Centraliza a segunda linha de texto */
+h3{
+    text-align: center;
+}
+
+/* Adiciona margem superior para o parágrafo */
+p {
+    margin-top: 20px;
+}
+
+/* Define a largura máxima do conteúdo */
+.container {
+    max-width: 800px;
+    margin: 0 auto; /* Centraliza o container */
+    padding: 0 20px;
+}
+
+/* Estilo das tags de código */
+code {
+    padding: 5px;
+    margin: 0 2px;
+    border: 1px solid #EAEAEA;
+    border-radius: 4px;
+    font-family: 'Consolas', 'Courier New', monospace;
+}
+
+/* Adiciona espaçamento para os títulos das tags */
+h2 {
+    margin-top: 40px;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grouping Tags Semânticas</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: dimgray;
+        margin: 0px;
+      }
+
+      header {
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+      }
+
+      nav {
+        background-color: rgb(104, 104, 104);
+        padding: 3px;
+        text-align: right;
+        box-shadow: 2px 3px 4px 1px rgba(0, 0, 0, 0.756);
+      }
+
+      nav > a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin-right: 30px;
+      }
+
+      nav > a:hover {
+        text-decoration: underline;
+      }
+
+      h1 {
+        display: inline-block;
+        height: 50px;
+        width: 133px;
+        margin: 11px 624px 10px 10px;
+      }
+
+      main {
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+      }
+
+      article {
+        background-color: lightgray;
+      }
+
+      article > aside {
+        background-color: rgb(121, 121, 121);
+        color: white;
+      }
+
+      footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 5px;
+        margin: 0px;
+      }
+
+      footer > p {
+        margin: 0px;
+      }
+
+      div#bola {
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+        margin: -15px;
+        background-color: black;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Meu Site</h1>
+      <div id="bola"></div>
+      <nav>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+      </nav>
+    </header>
+    <main>
+      <section id="assuntos">
+        <p>Esporte Política Tecnologia</p>
+      </section>
+      <section id="noticias">
+        <article>
+          <h2>Notícia sobre o Brasil</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia
+            libero ipsam consequatur hic minus eveniet soluta architecto odio
+            vel numquam cum fugit iusto deleniti quo maxime, quaerat cupiditate.
+            Doloribus, omnis.
+          </p>
+          <aside>
+            <p>Artigo escrito por José da Silva</p>
+          </aside>
+        </article>
+        <article></article>
+      </section>
+    </main>
+    <footer>
+      <p>Desenvolvido pelo Ciano</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to right, #D8DDEB, #A6D9EB);
+}
+
+main{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #80899ec3;
+    width: 800px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 35px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+h1{
+    color: #209781;
+    text-align: center;
+}
+
+h2{
+    color: #609E93;
+}
+
+p{
+    text-align: justify;
+}
+
+.tamanhoimg{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 300px;
+    padding: 10px;
+}

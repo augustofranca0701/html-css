@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>O que é HTML?</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+		.box {
+			width: 80%;
+			padding: 40px;
+			background-color: #fff;
+			box-shadow: 0px 0px 10px #aaa;
+			text-align: center;
+		}
+		h1 {
+			font-size: 36px;
+			font-weight: bold;
+			color: #333;
+			margin-top: 0;
+		}
+		p {
+			font-size: 18px;
+			line-height: 1.5;
+			color: #666;
+			margin: 20px 0;
+			padding: 0 40px;
+			text-align: justify;
+		}
+		.fade-in {
+			opacity: 0;
+			transition: opacity 1s ease-in;
+		}
+		.fade-in.active {
+			opacity: 1;
+		}
+		.rotate {
+			transform: rotate(0deg);
+			transition: transform 0.5s ease-in-out;
+		}
+		.rotate.active {
+			transform: rotate(360deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<h1>O que é HTML?</h1>
+		<p class="fade-in">HTML significa Hyper Text Markup Language. É uma linguagem de marcação usada para criar e estruturar conteúdo na web.</p>
+		<p class="fade-in">HTML usa uma série de tags para definir a estrutura do conteúdo, como cabeçalhos, parágrafos, imagens, links e formulários. Cada tag tem uma função específica e pode incluir atributos para controlar a aparência ou o comportamento do elemento.</p>
+		<p class="fade-in">As páginas da web são construídas usando HTML como o bloco de construção principal. Ele é geralmente combinado com CSS para controlar a aparência visual da página e com JavaScript para adicionar interatividade e dinamismo.</p>
+		<p class="fade-in">HTML é uma linguagem relativamente simples e fácil de aprender, e é uma habilidade essencial para qualquer pessoa que queira criar conteúdo para a web. Com o HTML, você pode criar sites simples ou complexos, blogs, portfólios e até aplicativos da web.</p>
+		<p class="fade-in">Experimente você mesmo! Use um editor de texto simples, como o Notepad ou o Sublime Text, para criar sua primeira página HTML. Basta criar um arquivo com extensão ".html", adicionar as tags HTML necessárias e visualizá-lo em um navegador web.</p>
+	</div>
+
+	<script>
+		// Adiciona animação de fade-in aos parágrafos
+		const paragraphs = document.querySelectorAll('p');
+		paragraphs.forEach((p, i) => {
+			setTimeout(() => {
+				p.classList.add('active');
+			}, 500 * i);
+		});
+
+		// Adiciona animação de rotação ao título
+		const title = document
+        .querySelector('h1');
+title.addEventListener('mouseover', () => {
+title.classList.add('rotate', 'active');
+});
+title.addEventListener('animationend', () => {
+title.classList.remove('rotate');
+});
+</script>
+</body>
+</html>

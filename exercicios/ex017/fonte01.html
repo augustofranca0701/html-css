@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        body{
+            /*
+            Medidas Absolutas
+            cm (centímetro), mm (milímetro), in (polegada), px (píxel), pt (ponto), pc (paica).
+
+            Medidas Relativas
+            em (altura M da fonte), ex (altura x da font), rem (root, relativo a fonte do body), vw (largura da view port), vh (altura da view port), %
+
+            Recomendação para site segunda W3C:
+            Medida Absoluta: px
+            Medida Relativa: em
+
+            16px geralmene é igual a 1em
+            2em = 32px
+
+            weight (ueith) = peso
+            width (uidith)= largura
+            height (raith)= altura
+
+            font-weight: lighter/normal/bold/bolder
+            font-weight: 100/200/300/.../900
+
+            font-style: italic/normal
+
+            text-decoration: underline/overline
+            */
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+
+        h1{
+            /*
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            
+            shorthand font:
+
+            precisa ser nessa ordem:
+            font-style -> font-weight -> font-size -> font-family
+            */
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+
+        h2{
+            font: bold 2em 'Work Sans';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nihil sit laborum, sed sapiente fuga. Unde distinctio animi, laborum inventore sunt reprehenderit illum, autem cupiditate totam vitae, deleniti nisi facere. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit repellat in debitis sunt dolor perspiciatis possimus pariatur magni nihil? Rem architecto recusandae deserunt veniam, quae debitis hic corporis a vel? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, nesciunt perspiciatis quos nihil deserunt quidem ipsam! Maxime inventore deserunt asperiores et neque, tempora, quod, corrupti minus esse reiciendis quo accusamus.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque commodi quasi, dicta quam, facilis vero distinctio ipsa ratione unde nesciunt fugit debitis omnis tenetur corrupti adipisci, deserunt quas repellendus. Dolorum!</p>
+    <h2>Subtítulo do Exercício</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate nemo facere temporibus. Voluptatum corrupti vel autem ipsum maiores, veritatis sequi alias nobis culpa? Nostrum animi fuga nisi, excepturi pariatur explicabo!</p>
+</body>
+</html>

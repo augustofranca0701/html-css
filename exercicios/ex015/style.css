@@ -1,0 +1,47 @@
+@charset "UTF-8";
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+}
+/*
+h1{
+    color: brown;
+    background-color: rgb(207, 181, 181);
+}
+
+h2{
+    color: darksalmon;
+}
+
+p{
+    text-align: justify;
+}
+*/
+
+.button.is-primary {
+    background-color: #024959;
+}
+
+/* Color Theme Swatches in Hex */
+.Deep-Teal-Sea-1-hex { color: #012E40; }
+.Deep-Teal-Sea-2-hex { color: #024959; }
+.Deep-Teal-Sea-3-hex { color: #026773; }
+.Deep-Teal-Sea-4-hex { color: #3CA6A6; }
+.Deep-Teal-Sea-5-hex { color: #F2E3D5; }
+
+/* Color Theme Swatches in RGBA */
+.Deep-Teal-Sea-1-rgba { color: rgba(1, 45, 63, 1); }
+.Deep-Teal-Sea-2-rgba { color: rgba(2, 73, 89, 1); }
+.Deep-Teal-Sea-3-rgba { color: rgba(2, 103, 114, 1); }
+.Deep-Teal-Sea-4-rgba { color: rgba(59, 165, 165, 1); }
+.Deep-Teal-Sea-5-rgba { color: rgba(242, 226, 212, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Deep-Teal-Sea-1-hsla { color: hsla(197, 96, 12, 1); }
+.Deep-Teal-Sea-2-hsla { color: hsla(191, 95, 17, 1); }
+.Deep-Teal-Sea-3-hsla { color: hsla(186, 96, 22, 1); }
+.Deep-Teal-Sea-4-hsla { color: hsla(180, 46, 44, 1); }
+.Deep-Teal-Sea-5-hsla { color: hsla(28, 52, 89, 1); }

@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(28, 28, 28);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+h1{
+    color: white;
+    font-size: 40px;
+}
+
+p{
+    color: white;
+    font-size: 12px;
+}
+
+.container{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    display: flex; /* Box Flexível */
+    align-items: center; /* controla o alinhamento de todos os itens no eixo transversal. */
+    justify-content: center; /* controla o alinhamento de todos os itens no eixo principal. */
+    flex-direction: column; /* em colunas se flex-direction é row e entre linhas se flex-direction é column. */
+}
+
+.box2 {
+    display: flex; /* Box Flexível */
+    align-items: center; /* controla o alinhamento de todos os itens no eixo transversal. */
+    justify-content: center; /* controla o alinhamento de todos os itens no eixo principal. */
+    flex-direction: row; /* em colunas se flex-direction é row e entre linhas se flex-direction é column. */
+}
+
+.margin{
+    margin: 10px;
+}
+
+.icon{
+    margin-top: 10px;
+}
+
+/* Animação de hover */
+
+.card {
+    box-sizing: border-box;
+    width: 560px;
+    height: 315px;
+    border: 1px solid white;
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+    -ms-border-radius: 17px;
+    -o-border-radius: 17px;
+}
+
+.card:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+.card:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.card2 {
+    box-sizing: border-box;
+    width: 239px;
+    height: 135px;
+    border: 1px solid white;
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+    -ms-border-radius: 17px;
+    -o-border-radius: 17px;
+}
+
+.card2:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+.card2:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+}
+
+button {
+    padding: 5px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: rgb(28, 28, 28);
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    transition: all 250ms;
+    overflow: hidden;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #2d2aea;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+}
+   
+button:hover {
+    color: #e8e8e8;
+}
+   
+button:hover::before {
+    width: 100%;
+}
